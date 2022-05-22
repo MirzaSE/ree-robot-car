@@ -1,5 +1,5 @@
 # Arduino 4-wheel robot car
-Program to control a 4-wheel robot car based on Arduino Uno. The code has been tested for the [Elegoo Smart Robot Car Kit V3.0 Plus](https://www.elegoo.com/download/), but can be easily adatped for other similar ones.
+Program to control a 4-wheel robot car based on Arduino Uno. The code has been tested for the [Elegoo Smart Robot Car Kit V4.0 Plus](https://www.elegoo.com/download/), but can be easily adatped for other similar ones.
 
 The robot consists of 4 [DC motors](https://en.wikipedia.org/wiki/DC_motor) driven by a [H-bridge](https://en.wikipedia.org/wiki/H-bridge) with dual output, connecting the two left wheels and the two right ones to its outputs. The car is remotely controlled either by Bluetooth, through the Elegoo Tool app, or by [infrared](https://en.wikipedia.org/wiki/Infrared). An [ultrasonic distance sensor](https://en.wikipedia.org/wiki/Ultrasonic_transducer) attached to a servo motor measures the front distance to objects. A line tracking sensor on the base, with 3 pairs of LED + photoresistor, allows to follow a line drawn on the floor, going around objects placed over it.
 
