@@ -1,0 +1,14 @@
+# KDE
+.directory
+
+# Personal files
+TODO.md
+
+# VSCode configuration files
+.vscode/
+
+# Compiled files
+build/
+
+# PlatformIO
+.pio
