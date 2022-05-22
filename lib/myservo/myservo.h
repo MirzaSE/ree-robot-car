@@ -1,12 +1,3 @@
-/**
- * @file myservo.h
- * @author José Ángel Sánchez (https://github.com/gelanchez)
- * @brief Library that inherits from Servo.h.
- * @version 1.0.2
- * @date 2021-10-02
- * @copyright GPL-3.0
- */
-
 #ifndef MYSERVO_H
 #define MYSERVO_H
 

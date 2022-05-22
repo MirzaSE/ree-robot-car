@@ -1,12 +1,3 @@
-/**
- * @file constants.h
- * @author José Ángel Sánchez (https://github.com/gelanchez)
- * @brief Constants used along the program.
- * @version 1.1.1
- * @date 2021-04-17
- * @copyright GPL-3.0
- */
-
 #ifndef CONSTANTS_H
 #define CONSTANTS_H
 

@@ -1,11 +1,3 @@
-/**
- * @file ultrasonic.h
- * @author José Ángel Sánchez (https://github.com/gelanchez)
- * @brief Library for using the ultrasonic sensor HC-SR04 wiht pulseIn.
- * @version 1.0.2
- * @date 2021-10-02
- * @copyright GPL-3.0
- */
 #ifndef ULTRASONIC_H
 #define ULTRASONIC_H
 

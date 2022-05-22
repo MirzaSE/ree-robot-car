@@ -1,12 +1,3 @@
-/**
- * @file robot.h
- * @author José Ángel Sánchez (https://github.com/gelanchez)
- * @brief Library for controling the robot.
- * @version 1.2.0
- * @date 2021-04-18
- * @copyright GPL-3.0
- */
-
 #ifndef ROBOT_H
 #define ROBOT_H
 
@@ -46,7 +37,7 @@ public:
     void restartState();
     void begin();
     void remoteControlMode(Order order, unsigned char linearSpeed = Constants::linearSpeed, unsigned char rotateSpeed = Constants::rotateSpeed);
-    void IRControlMode(unsigned char linearSpeed = Constants::linearSpeed, unsigned char rotateSpeed = Constants::rotateSpeed);
+    void IRControlMode(Key key, unsigned char linearSpeed = Constants::linearSpeed, unsigned char rotateSpeed = Constants::rotateSpeed);
     void obstacleAvoidanceMode();
     void lineTrackingMode();
     void parkMode();

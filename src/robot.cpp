@@ -106,9 +106,11 @@ void Robot::remoteControlMode(Order order, unsigned char linearSpeed, unsigned c
  * @param linearSpeed
  * @param rotateSpeed
  */
-void Robot::IRControlMode(unsigned char linearSpeed, unsigned char rotateSpeed)
+void Robot::IRControlMode(Key key, unsigned char linearSpeed, unsigned char rotateSpeed)
 {
-    Key key = m_infrared.decodeIR();
+    if(key == Key::unkwown) 
+        key = m_infrared.decodeIR();
+   
     switch (key)
     {
     case Key::keyOk:
@@ -131,7 +133,7 @@ void Robot::IRControlMode(unsigned char linearSpeed, unsigned char rotateSpeed)
         m_motors.right(rotateSpeed);
         m_lastUpdate = millis();
         break;
-    default:
+    default:       
         break;
     }
 

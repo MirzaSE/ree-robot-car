@@ -1,12 +1,3 @@
-/**
- * @file infrared.h
- * @author José Ángel Sánchez (https://github.com/gelanchez)
- * @brief Library for receiving and processing data from the IR sensor.
- * @version 1.2.0
- * @date 2022-04-18
- * @copyright GPL-3.0
- */
-
 #ifndef INFRARED_H
 #define INFRARED_H
 

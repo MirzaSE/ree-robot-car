@@ -92,22 +92,23 @@ void setup()
  */
 void loop()
 {
-    g_bluetooth.receiveData();
-    if (g_bluetooth.getData() != "")
-    {      
-        Serial.print("Data");  
-        Serial.print(g_bluetooth.getData());
-        g_bluetooth.decodeElegooJSON();
-        if (g_mode != g_bluetooth.getMode())
-        {
-            Serial.println("Restart state");  
-            g_robot.restartState();
-            setLedColor();
-        }
-    }
-    else
+     Key key = Key::unkwown;
+    // g_bluetooth.receiveData();
+    // if (g_bluetooth.getData() != "")
+    // {      
+    //     Serial.print("Data");  
+    //     Serial.print(g_bluetooth.getData());
+    //     g_bluetooth.decodeElegooJSON();
+    //     if (g_mode != g_bluetooth.getMode())
+    //     {
+    //         Serial.println("Restart state");  
+    //         g_robot.restartState();
+    //         setLedColor();
+    //     }
+    // }
+    // else
     {        
-        Key key = g_robot.IRKeyPressed();
+        key = g_robot.IRKeyPressed();
         checkIRKey(key);
     }
 
@@ -125,7 +126,7 @@ void loop()
     {
         g_mode = RobotMode::IRCONTROL;
         //g_robot.setLed(CRGB::Orange);
-        g_robot.IRControlMode();
+        g_robot.IRControlMode(key);
         //checkIRKey(key);
         break;
     }

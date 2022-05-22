@@ -1,12 +1,3 @@
-/**
- * @file linetracking.h
- * @author José Ángel Sánchez (https://github.com/gelanchez)
- * @brief Library to handle the linetracking IR sensors.
- * @version 1.0.2
- * @date 2021-10-02
- * @copyright GPL-3.0
- */
-
 #ifndef LINETRACKING_H
 #define LINETRACKING_H
 
